@@ -16,7 +16,7 @@ const Services = ({ items }: ServicesProps) => {
     <section id="services" className="services">
       <div className="heading">
         <span>Specialists & Services</span>
-        <h2>`&quot;`Your One-Stop Solution for Expert Solutions`&quot;`</h2>
+        <h2>&quot;Your One-Stop Solution for Expert Solutions&quot;</h2>
       </div>
       <div className="service-container">
         {items.map((item, i) => {
