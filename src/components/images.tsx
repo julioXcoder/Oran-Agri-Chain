@@ -16,13 +16,13 @@ const Images = ({ items }: ImagesProps) => {
       {items.map((item, i) => {
         return (
           <div className="images" key={i}>
-            <Image
+            {/* <Image
               src={item.img}
               alt={item.alt}
               width={800}
               height={800}
-            ></Image>
-            {/* <img src={item.img} alt={item.alt} /> */}
+            ></Image> */}
+            <img src={item.img} alt={item.alt} />
           </div>
         );
       })}

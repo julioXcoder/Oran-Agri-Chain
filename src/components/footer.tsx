@@ -52,7 +52,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col">
-            <h4>Info</h4>
+            <h4>Information</h4>
             <ul>
               <li>
                 <h5>Phone:</h5>
