@@ -88,10 +88,28 @@ const Slider = ({ items, seconds }: SliderProps) => {
         ></Image>
       </div>
       <div className="nav-buttons">
-        <button onClick={handlePrev}>
+        <button
+          style={{
+            background: "transparent",
+            outline: "none",
+            border: "none",
+            cursor: "pointer",
+            color: items[currentItem].color,
+          }}
+          onClick={handlePrev}
+        >
           <SkipPreviousOutlinedIcon />
         </button>
-        <button onClick={handleNext}>
+        <button
+          style={{
+            background: "transparent",
+            outline: "none",
+            border: "none",
+            cursor: "pointer",
+            color: items[currentItem].color,
+          }}
+          onClick={handleNext}
+        >
           <SkipNextOutlinedIcon />
         </button>
       </div>

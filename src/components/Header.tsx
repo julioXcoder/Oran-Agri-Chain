@@ -5,31 +5,34 @@ import Link from "next/link";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 
 const Header = () => {
+  const [clicked, setClicked] = React.useState(false);
+
+  let myClass = clicked ? "navbar active" : "navbar";
   return (
     <header>
       <Link href="/" className="logo">
         Oran Agri Chain
       </Link>
 
-      <div className="menu-icon">
-        <MenuOutlinedIcon />
+      <div id="menu-icon" onClick={() => setClicked(!clicked)}>
+        <MenuOutlinedIcon style={{ fontSize: "2.3rem" }} />
       </div>
 
-      <ul className="navbar">
+      <ul className={myClass}>
         <li>
-          <Link href="#slider">Home</Link>
+          <Link href="/#slider">Home</Link>
         </li>
         <li>
-          <Link href="#about">About</Link>
+          <Link href="/#about">About</Link>
         </li>
         <li>
-          <Link href="#services">Services</Link>
+          <Link href="/#services">Services</Link>
         </li>
         <li>
-          <Link href="#">Contact</Link>
+          <Link href="/#contact">Contact</Link>
         </li>
         <li>
-          <Link href="#">Gallery</Link>
+          <Link href="/gallery">Gallery</Link>
         </li>
       </ul>
     </header>

@@ -16,13 +16,13 @@ const About = () => {
           WE FEED <br />A HAPPY WORLD!
         </h2>
         <p>
-          Oran Agri chain Limited is committed in contributing to sustainable
-          development of rural areas, in particular through supporting the
-          agricultural sector to adapt to new challenges, protecting the
-          environment and the countryside. Especially in view of climate change,
-          and improving the quality of life in rural areas, whilst ensuring
-          growth and jobs in the countryside and produce high quality products
-          that are safe for consumers.
+          Oran Agri chain Limited is a company that aims to support sustainable
+          development in rural areas by helping the agricultural sector adapt to
+          new challenges, protecting the environment, and improving the quality
+          of life in rural areas. The company aims to achieve this by promoting
+          growth and jobs in the countryside, and producing high-quality and
+          safe products for consumers, particularly in light of the challenges
+          posed by climate change.
         </p>
         <button className="btn" onClick={() => setIsModalOpen(true)}>
           read more
